@@ -1,5 +1,5 @@
 function Home() {
-  return <h1>Volte aqui as 22:30</h1>;
+  return <h1>Volte aqui as 22:31</h1>;
 }
 
 export default Home;
