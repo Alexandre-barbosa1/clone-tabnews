@@ -13,7 +13,7 @@ test("Get to /api/v1/status should return 200", async () => {
   const parsedUpdateAt = new Date(responseBody.updated_at).toISOString();
   expect(responseBody.updated_at).toEqual(parsedUpdateAt);
 
-  expect(responseBody.dependecies.database.version).toEqual("20.0");
+  expect(responseBody.dependecies.database.version).toEqual("16.0");
   expect(responseBody.dependecies.database.max_connections).toEqual(100); // Removido as aspas
   expect(responseBody.dependecies.database.opened_connections).toEqual(1); // Removido as aspas
 });
